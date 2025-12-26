@@ -592,9 +592,7 @@
                         } catch(e) {}
                         
                         // 获取账户详情
-                        setTimeout(function() {
-                            getAccountDetail(logonUserId);
-                        }, 500);
+                        getAccountDetail(logonUserId);
                     } catch(e) {
                         addLog('解析用户信息失败: ' + e.message, 'error');
                         try {
