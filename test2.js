@@ -575,8 +575,8 @@
                     addLog('响应数据: ' + JSON.stringify(data), 'info');
                     
                     try {
-                        var logonUserId = data.logonUserId;
-                        var logonName = data.logonName;
+                        var logonUserId = data.data.logonUserId;
+                        var logonName = data.data.logonName;
                         
                         addLog('解析用户ID: ' + logonUserId, 'success');
                         addLog('解析用户名: ' + logonName, 'success');
